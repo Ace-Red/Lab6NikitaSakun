@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 
 result_text = "'ФУТБОЛКИ'"
 browser = webdriver.Chrome("/Users/nikitasakun/Desktop/Проекты Pycharm/Lab6NikitaSakun/chromedriver")
-browser.implicitly_wait(10)
+browser.implicitly_wait(15)
 browser.get("https://www.farfetch.com/ua/shopping/women/items.aspx")
 
 browser.find_element_by_css_selector('[type="search"]').send_keys("Футболки")
