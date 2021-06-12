@@ -9,7 +9,7 @@ browser.get("https://www.farfetch.com/ua/shopping/women/items.aspx")
 
 browser.find_element_by_css_selector('[type="search"]').send_keys("Футболки")
 browser.find_element_by_css_selector('[type="search"]').send_keys(Keys.RETURN)
-
+   
 actual_result = browser.find_element_by_css_selector('[class="css-jcxr20-Display e5enhw40"]').text
 
 assert result_text == actual_result
